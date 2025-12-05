@@ -7,7 +7,7 @@ import sys
 # -----------------------------
 # CONFIG
 # -----------------------------
-MODEL_PATH = "best_resnet18_epoch100.pt"   # your trained age model
+MODEL_PATH = "best_resnet18_epoch100.pt"   
 IMG_SIZE = 128
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -218,3 +218,4 @@ if __name__ == "__main__":
 
     image_path = sys.argv[1]
     predict(image_path)
+
